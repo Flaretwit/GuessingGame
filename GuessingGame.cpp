@@ -10,6 +10,7 @@ using namespace std;
 int main() {
 	bool valid;
 	int secret, guess, guesses;
+	guesses = 0;
 	bool playagain = true;
 	char CC[10];
 	//this while loop manages the entire game
