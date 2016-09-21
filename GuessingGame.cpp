@@ -24,6 +24,7 @@ int main() {
 		while(!valid) {
 			cout << "Try to guess it: \n";
 		if(!cin) {
+			
 			cout << "Incorrect input. \n";
 			cin.clear();
 			cin.ignore(1000, '\n');
@@ -36,9 +37,9 @@ int main() {
 		guesses++;
 		//these statements determine if the users' guesses are too high or too low or are equal
 		if(secret < guess)
-			cout << "The secret number is lower";
+			cout << "The secret number is lower\n";
 		else if (secret > guess) 
-			cout << "The secret number is higher";
+			cout << "The secret number is higher\n";
 		} while(secret!=guess);
 	//output statements
 	cout << "Congrats!";
